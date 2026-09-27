@@ -1984,28 +1984,7 @@ Rotate who picks the wildcard side dish to keep dinner democracy thriving!
         </div>
       )}
 
-      {/* Global Peaceful Kitchen Footer */}
-      <footer className="w-full bg-white/90 backdrop-blur-md border-t border-[#f0f3ff] mt-auto no-print">
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-3 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#584237]">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-[#9d4300]" />
-            <span>
-              <strong className="text-[#111c2d] font-bold">Peaceful Kitchen Tip:</strong> Rotate who picks the wildcard side dish to keep dinner democracy thriving!
-            </span>
-          </div>
-          <div className="flex items-center gap-3 text-xs text-[#584237]">
-            <span className="flex items-center gap-1">
-              <kbd className="px-1.5 py-0.5 rounded bg-[#f0f3ff] text-[#111c2d] font-mono border border-[#dee8ff]">B</kbd> Quick Bite
-            </span>
-            <span className="flex items-center gap-1">
-              <kbd className="px-1.5 py-0.5 rounded bg-[#f0f3ff] text-[#111c2d] font-mono border border-[#dee8ff]">/</kbd> Search Cravings
-            </span>
-            <span className="flex items-center gap-1">
-              <kbd className="px-1.5 py-0.5 rounded bg-[#f0f3ff] text-[#111c2d] font-mono border border-[#dee8ff]">Esc</kbd> Dismiss Poll
-            </span>
-          </div>
-        </div>
-      </footer>
+
     </div>
   );
 }
