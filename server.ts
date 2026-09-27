@@ -148,19 +148,10 @@ Return valid JSON matching this exact structure:
 });
 
 // Mount Vite in development or static files in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'dist')));
-  app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-  });
-} else {
-  const { createServer: createViteServer } = await import('vite');
-  const vite = await createViteServer({
-    server: { middlewareMode: true },
-    appType: 'spa',
-  });
-  app.use(vite.middlewares);
-}
+app.use(express.static(path.join(__dirname, 'dist')));
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server listening on port ${port}`);
